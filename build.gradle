@@ -1,0 +1,45 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.3.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
+
+group = 'com.wemakeprice.ad'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    providedRuntime
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+    compile('org.springframework.boot:spring-boot-starter-data-redis')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('redis.clients:jedis:2.9.0')
+
+    compile('org.codehaus.jackson:jackson-core-asl:1.9.13')
+    compile('org.codehaus.jackson:jackson-mapper-asl:1.9.13')
+    compile('com.googlecode.json-simple:json-simple:1.1.1')
+
+    runtime('org.springframework.boot:spring-boot-devtools')
+    compileOnly('org.projectlombok:lombok')
+    providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
