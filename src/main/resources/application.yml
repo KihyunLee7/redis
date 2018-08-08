@@ -2,3 +2,14 @@ redis:
   host: localhost
   port: 6379
   password: 11111
+  sentinls:
+    node1:
+      host: localhost
+      port: 6386
+    node2:
+      host: localhost
+      port: 6387
+    node3:
+      host: localhost
+      port: 6388
+
