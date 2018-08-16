@@ -38,6 +38,10 @@
           <option name="url" value="http://211.115.79.28:18080/wmp-global/reporter.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://stash.wemakeprice.com/scm/wmpad/ad-batch.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/IdeaProjects" />
