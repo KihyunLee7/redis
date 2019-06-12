@@ -74,6 +74,10 @@
           <option name="url" value="http://gitlab.wonders.work" />
           <option name="userName" value="kihyun" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://stash.wemakeprice.com/scm/wmpad/sa-platform.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/IdeaProjects" />
